@@ -1,0 +1,34 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            int min = n;
+            int max = n;
+            for (;;){
+              n = Convert.ToInt32(Console.ReadLine());
+              if (n != 0){
+                MinMaxSeq(ref a, ref b);
+              }
+              else{
+                break;
+              }
+            }
+            Console.WriteLine(min);
+            Console.WriteLine(max);
+        }
+        static void MinMaxSeq(ref int Min,ref int Max)
+        {
+            if (min > n){
+              min = n;
+            }
+            if (max < n){
+              max = n;
+            }
+        }
+    }
+}
