@@ -1,0 +1,20 @@
+using System;
+
+namespace project10
+{
+    class Program
+    {       
+        static void Main(string[] args)
+        {
+            int f = 1;
+            int p = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                f *= p;
+                p--;
+            }
+            while (p > 1) ;
+            Console.WriteLine(f);
+        }
+    }
+}
